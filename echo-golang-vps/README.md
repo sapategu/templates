@@ -1,0 +1,1 @@
+### This is how we can deploy Golang API with Echo Framework in VPS (Staging Area)

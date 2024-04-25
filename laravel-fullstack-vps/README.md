@@ -1,0 +1,1 @@
+### This is how we can deploy Fullstack Web Apps with Laravel in VPS (Staging Area)

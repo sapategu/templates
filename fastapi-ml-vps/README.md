@@ -1,0 +1,1 @@
+### This is how we can deploy Machine Learning API with FastAPI in VPS (Staging Area)
