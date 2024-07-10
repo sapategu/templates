@@ -1,0 +1,17 @@
+services:
+  portainer:
+    image: portainer/portainer-ee:latest # or for community: portainer/portainer-ce:alpine
+    container_name: portainer
+    command: -H unix:///var/run/docker.sock
+    
+    # Explanations for the ports: https://docs.portainer.io/advanced/edge-agent#the-back-story
+    ports:
+      - 8000:8000
+      - 9443:9443
+    volumes:
+      - portainer_data:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: always
+
+volumes:
+  portainer_data:
